@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import { fetchPosts } from "../actions";
 
 const PostList = (props) => {
-  return <div></div>;
+  return <div>PostList</div>;
 };
 
-export default PostList;
+export default connect(null, { fetchPost })(PostList);
